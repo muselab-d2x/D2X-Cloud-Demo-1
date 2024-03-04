@@ -23,6 +23,6 @@ jobs:
             - name: Auth to DevHub
               run: /usr/local/bin/devhub.sh
             - name: Install d2x_cli
-              run: pip install git+https://github.com/muselab-d2x/d2x-cli.git
+              run: pip install d2x-cli
             - name: Run D2X Job
               run: d2x job run ${{ github.event.deployment.payload.job }}
