@@ -1,0 +1,28 @@
+name: Feature Test
+
+on:
+  deployment:
+
+jobs:
+    feature-test:
+        name: "Run D2X Job"
+        runs-on: ubuntu-latest
+        container:
+            image: ghcr.io/muselab-d2x/d2x:latest
+            options: --user root
+            credentials:
+                username: ${{ github.actor }}
+                password: ${{ secrets.GITHUB_TOKEN }}
+            env:
+                DEV_HUB_AUTH_URL: "${{ secrets.DEV_HUB_AUTH_URL }}"
+                CUMULUSCI_SERVICE_d2x: "${{ secrets.D2X_TOKEN }}"
+                CUMULUSCI_SERVICE_github: "{ \"username\": \"${{ github.actor }}\", \"token\": \"${{ secrets.github-token }}\", \"email\": \"${{ secrets.GH_EMAIL }}\" }"
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+            - name: Auth to DevHub
+              run: /usr/local/bin/devhub.sh
+            - name: Install d2x_cli
+              run: pip install d2x-cli
+            - name: Run D2X Job
+              run: d2x job run ${{ github.event.deployment.payload.job }}
