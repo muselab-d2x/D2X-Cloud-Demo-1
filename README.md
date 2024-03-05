@@ -1,5 +1,6 @@
 # D2X Cloud Demo 1
-Enter a description for your project
+
+Demo project for D2X Cloud.
 
 # Project Setup
 This project is preconfigured with D2X for a comprehensive Development-to-Delivery Experience including CI/CD using GitHub Actions and development environments using GitHub Codespaces.
