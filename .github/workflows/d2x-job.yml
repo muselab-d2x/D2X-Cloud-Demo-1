@@ -16,7 +16,7 @@ jobs:
             env:
                 DEV_HUB_AUTH_URL: "${{ secrets.DEV_HUB_AUTH_URL }}"
                 CUMULUSCI_SERVICE_d2x: "${{ secrets.D2X_TOKEN }}"
-                CUMULUSCI_SERVICE_github: "{ \"username\": \"${{ github.actor }}\", \"token\": \"${{ secrets.github-token }}\", \"email\": \"${{ secrets.GH_EMAIL }}\" }"
+                CUMULUSCI_SERVICE_github: "{ \"username\": \"${{ github.actor }}\", \"token\": \"${{ secrets.github-token }}\", \"email\": \"${{ secrets.GH_EMAILkk }}\" }"
         steps:
             - name: Checkout
               uses: actions/checkout@v2
@@ -25,4 +25,4 @@ jobs:
             - name: Install d2x_cli
               run: pip install d2x-cli
             - name: Run D2X Job
-              run: d2x job run ${{ github.event.deployment.payload.job }}
+              run: d2x job run ${{ github.event.deployment.payload.job }} --debug
