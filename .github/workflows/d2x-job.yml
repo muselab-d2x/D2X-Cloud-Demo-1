@@ -25,4 +25,4 @@ jobs:
             - name: Install d2x_cli
               run: pip install d2x-cli
             - name: Run D2X Job
-              run: d2x job run ${{ github.event.deployment.payload.job }} --debug
+              run: d2x job run ${{ github.event.deployment.payload.job }}
