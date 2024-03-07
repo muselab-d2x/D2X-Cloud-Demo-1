@@ -16,5 +16,3 @@ You can check the status of your setup by monitoring the status of the following
 * [![Beta Test](https://github.com/muselab-d2x/D2X-Cloud-Demo-1/actions/workflows/beta.yml/badge.svg)](https://github.com/muselab-d2x/D2X-Cloud-Demo-1/actions/workflows/beta.yml)
 * [![Production Release](https://github.com/muselab-d2x/D2X-Cloud-Demo-1/actions/workflows/release.yml/badge.svg)](https://github.com/muselab-d2x/D2X-Cloud-Demo-1/actions/workflows/release.yml)
 
-
-  
