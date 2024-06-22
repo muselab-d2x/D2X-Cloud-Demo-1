@@ -10,7 +10,9 @@ project:
     source_format: sfdx
     dependencies:
         - github: 'https://github.com/SFDO-Community/declarative-lookup-rollup-summaries'
-        - github: 'https://github.com/SalesforceFoundation/NPSP'
+        - github: 'https://github.com/SFDO-Community/GrassrootsSurveySalesforcePackage'
+        - github: 'https://github.com/Salesforce-Indicators'
+        - github: 'https://github.com/SFDO-Community/Summit-Events-App'
         - namespace: pmdm
           version: 1.33
         - github: 'https://github.com/muselab-d2x/D2X-Cloud-Demo-1'
