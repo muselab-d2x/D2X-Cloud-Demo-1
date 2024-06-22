@@ -11,7 +11,7 @@ project:
     dependencies:
         - github: 'https://github.com/SFDO-Community/declarative-lookup-rollup-summaries'
         - github: 'https://github.com/SFDO-Community/GrassrootsSurveySalesforcePackage'
-        - github: 'https://github.com/Salesforce-Indicators'
+        - github: 'https://github.com/SFDO-Community/Salesforce-Indicators'
         - github: 'https://github.com/SFDO-Community/Summit-Events-App'
         - namespace: pmdm
           version: 1.33
