@@ -13,6 +13,7 @@ project:
         - github: 'https://github.com/SFDO-Community/GrassrootsSurveySalesforcePackage'
         - github: 'https://github.com/SFDO-Community/Salesforce-Indicators'
         - github: 'https://github.com/SFDO-Community/Summit-Events-App'
+        - github: 'https://github.com/muselab-d2x/Cactusforce24-Base'
         - namespace: pmdm
           version: 1.33
         - github: 'https://github.com/muselab-d2x/D2X-Cloud-Demo-1'
