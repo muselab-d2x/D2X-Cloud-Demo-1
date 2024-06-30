@@ -18,6 +18,20 @@ project:
           version: 1.33
         - github: 'https://github.com/muselab-d2x/D2X-Cloud-Demo-1'
           subfolder: 'force-app'
+    dependency_resolutions:
+        preproduction: commit_status
+        resolution_strategies:
+            commit_status:
+                - tag
+                - commit_status_exact_branch
+                - commit_status_release_branch
+                - commit_status_previous_release_branch
+                - commit_status_parent_branch
+                - commit_status_default_branch
+                - latest_beta
+                - latest_release
+                - unmanaged
+            
     
       
 
