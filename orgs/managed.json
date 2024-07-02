@@ -1,6 +1,7 @@
 {
   "orgName": "D2X Cloud Demo 1 - Managed Org",
   "edition": "Developer",
+  "features": ["WavePlatform", "DevelopmentWave", "AnalyticsAdminPerms", "ApexUserModeWithPermset"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
