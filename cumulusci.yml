@@ -18,6 +18,8 @@ project:
           version: 1.33
         - github: 'https://github.com/muselab-d2x/D2X-Cloud-Demo-1'
           subfolder: 'force-app'
+    dependency_resolutions:
+        preproduction: commit_status
     
       
 
